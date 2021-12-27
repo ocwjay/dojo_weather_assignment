@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navContainer">
+            <a href="#" class="logoText">DojoWeather</a>
+            <ul class="navLinks">
+                <li><a href="#" onclick="cityAlert()">Burbank</a></li>
+                <li><a href="#" onclick="cityAlert()">Chicago</a></li>
+                <li><a href="#" onclick="cityAlert()">Dallas</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="row1">
+            <h1>San Jose</h1>
+            <div class="temperatureSelectContainer">
+                <p>show temperature in</p>
+                <select name="tempTypeSelect" id="tempTypeSelect" onchange="changeTempType(this)">
+                    <option value="celsius">&deg C</option>
+                    <option value="fahrenheit">&deg F</option>
+                </select>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="dayCast">
+                <h2>Today</h2>
+                <img src="assets/some_rain.png" alt="some rain icon" class="castImg">
+                <p class="castText">some rain</p>
+                <div class="highLowContainer">
+                    <p class="high"><span id="temp1">24</span>&deg</p>
+                    <p class="low"><span id="temp2">18</span>&deg</p>
+                </div>
+            </div>
+            <div class="dayCast">
+                <h2>Tomorrow</h2>
+                <img src="assets/some_sun.png" alt="some sun icon" class="castImg">
+                <p class="castText">some sun</p>
+                <div class="highLowContainer">
+                    <p class="high"><span id="temp3">27</span>&deg</p>
+                    <p class="low"><span id="temp4">19</span>&deg</p>
+                </div>
+            </div>
+            <div class="dayCast">
+                <h2>Friday</h2>
+                <img src="assets/some_clouds.png" alt="some clouds icon" class="castImg">
+                <p class="castText">some clouds</p>
+                <div class="highLowContainer">
+                    <p class="high"><span id="temp5">21</span>&deg</p>
+                    <p class="low"><span id="temp6">16</span>&deg</p>
+                </div>
+            </div>
+            <div class="dayCast">
+                <h2>Saturday</h2>
+                <img src="assets/some_sun.png" alt="some sun icon" class="castImg">
+                <p class="castText">some sun</p>
+                <div class="highLowContainer">
+                    <p class="high"><span id="temp7">26</span>&deg</p>
+                    <p class="low"><span id="temp8">21</span>&deg</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cookiesWarning">
+        <img src="assets/cookie.png" alt="cookies icon">
+        <div class="warningText">
+            <p class="cookieHeader">Stop! Cookie time</p>
+            <p class="cookieText">We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+        </div>
+        <button id="cookieAcceptButton" onclick="acceptCookies(this)">I Accept</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

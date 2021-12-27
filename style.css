@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'raleway', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    background-color: cornflowerblue;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navContainer {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.logoText {
+    font-size: 3em;
+    text-decoration: none;
+    color: white;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+    list-style: none;
+    font-size: 1.7em;
+}
+
+.navLinks li a {
+    text-decoration: none;
+    color: white;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1020px;
+}
+
+.row1, .row2 {
+    width: 1000px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row1 {
+    border-bottom: solid 2px black;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.temperatureSelectContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.temperatureSelectContainer p {
+    margin: 5px;
+}
+
+.dayCast {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    margin: 10px;
+    height: 400px;
+}
+
+.castImg {
+    width: 180px;
+    border-radius: 50%;
+}
+
+.castText {
+    font-size: 1.5em;
+}
+
+.highLowContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    font-size: 2em;
+}
+
+.high {
+    color: red;
+}
+
+.low {
+    color: blue;
+}
+
+.cookiesWarning {
+    border: solid 2px black;
+    width: 1050px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 50px;
+    background-color: white;
+}
+
+.cookieHeader {
+    font-weight: bold;
+    margin-left: 10px;;
+}
+
+.cookieText {
+    font-size: 1.3em;
+    margin: 10px;
+}
+
+.warningText {
+    flex: 2;
+}
+
+#cookieAcceptButton {
+    background-color: cornflowerblue;
+    padding: 10px;
+}
